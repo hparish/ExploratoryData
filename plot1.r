@@ -6,7 +6,6 @@
 ##                 = 9 * 2,075,259  * 8 = 149,418,648 bytes = 0.149 GB
 
 library(data.table)
-setwd("C:/Users/holly/Documents/2016/Coursera Data Science/C4 Exploratory Data Analysis/Week1/Assignment")
 
 dat <- fread("household_power_consumption.txt", header = TRUE, sep = ";", na.strings=c("?",""))
 subdat <- dat[Date=="1/2/2007"| Date == "2/2/2007"]
